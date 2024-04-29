@@ -25,4 +25,8 @@ export class ProductsService {
     return this.httpClient.put<Product[]>(`/api/products/${id}`, payload);
   }
 
+  delete(id:string){
+    return this.httpClient.delete(`/api/products/${id}`);
+  }
+
 }

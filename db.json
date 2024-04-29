@@ -1,20 +1,21 @@
 {
   "products": [
     {
-      "title": "Produto de Teste Editado",
       "id": "1"
     },
     {
-      "id": "524c",
-      "title": "Danilo"
+      "id": "524c"
     },
     {
-      "id": "4b08",
-      "title": "Caneca Nerd"
+      "id": "4b08"
     },
     {
-      "id": "ff05",
-      "title": "Camiseta Star Wars"
+      "title": "Camiseta Star Warsh",
+      "id": "ff05"
+    },
+    {
+      "id": "b862",
+      "title": "Filme Star Wars"
     }
   ]
 }

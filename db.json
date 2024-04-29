@@ -1,10 +1,6 @@
 {
   "products": [
     {
-      "title": "Camiseta Star Warsh",
-      "id": "ff05"
-    },
-    {
       "id": "b862",
       "title": "Filme Star Wars"
     }

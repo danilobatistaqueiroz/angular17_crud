@@ -14,4 +14,5 @@ export class CardComponent {
   product = input.required<Product>();
   @Output() edit = new EventEmitter();
   productTitle = computed(() => this.product().title);
+
 }

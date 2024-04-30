@@ -1,9 +1,7 @@
 import { ConfirmationDialogService } from './../../shared/services/confirmation-dialog.service';
-import { Component, OnInit, inject, signal } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Component, inject, signal } from '@angular/core';
 import { ProductsService } from '../../shared/services/products.service';
 import { Product } from '../../shared/interfaces/product.interface';
-import { MatDialog, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { CardComponent } from './components/card/card.component';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
@@ -17,6 +15,7 @@ import { filter } from 'rxjs';
   styleUrl: './list.component.scss'
 })
 export class ListComponent {
+  
   products = signal<Product[]>(inject(ActivatedRoute).snapshot.data['products']);
   productsService = inject(ProductsService);
   router = inject(Router);
@@ -38,15 +37,6 @@ export class ListComponent {
         });
       });
     });
-    // ######################  ou  ######################
-    // this.confirmationDialogService
-    // .openDialog().subscribe((anwser) => {
-    //   if(anwser){
-    //     this.productsService.delete(product.id)
-    //     .subscribe(() => {
-    //        this.carregaProdutos();
-    //     });
-    //   }
-    // });
   }
+
 }

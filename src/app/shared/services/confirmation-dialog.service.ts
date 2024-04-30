@@ -1,10 +1,7 @@
 import { Component, Injectable, inject } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
-import { Router } from '@angular/router';
-import { Observable, filter } from 'rxjs';
-import { Product } from '../interfaces/product.interface';
-import { ProductsService } from './products.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-confirmation-dialog',
